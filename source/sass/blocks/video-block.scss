@@ -1,0 +1,17 @@
+.video-block{
+  padding: 35px 0 45px;
+    .text-box__title{
+      margin: 0 0 45px 0;
+    }
+    .text-box__caption{
+      max-width: 280px;
+  }
+}
+.video-block__figure{
+  @include reset_tag-styles;
+}
+.video-block__image{
+  width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,1 +1,34 @@
 // Начните писать стили здесь
+
+@font-face{
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/ptsans.woff2) format("woff2"),
+       url(../fonts/ptsans.woff) format("woff");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/ptsansbold.woff2) format("woff2"),
+       url(../fonts/ptsansbold.woff) format("woff");
+  font-display: swap;
+}
+
+@import"global/mixins.scss";
+@import"global/variables.scss";
+@import"blocks/page.scss";
+@import"blocks/buttons.scss";
+@import"blocks/page-header.scss";
+@import"blocks/header-figure.scss";
+@import"blocks/text-box.scss";
+@import"blocks/advantages.scss";
+@import"blocks/hotel-searh.scss";
+@import"blocks/footer.scss";
+@import"blocks/gallery.scss";
+@import"blocks/video-block.scss";
+@import"blocks/review.scss";
+@import"blocks/popup.scss";
