@@ -1,0 +1,17 @@
+
+.page-footer{
+  background-color: $bg-header;
+  padding: 29px 0 18px;
+}
+.footer-social__list{
+  @include reset_ul-styles;
+}
+.page-footer__title{
+  @include reset_tag-styles;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+
+.gallery{
+  padding: 35px 10px 15px;
+  border-bottom: 1px solid #e5e5e5;
+  .text-box__title{
+    margin: 0 0 45px 0;
+  }
+  .text-box__caption{
+    width: 100%;
+    max-width: 320px;
+  }
+}
+.gallery__list{
+  @include reset_ul-styles;
+}
+.gallery__figure{
+  @include reset_tag-styles;
+}
+.gallery__image{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.gallery__subtitle{
+  @include reset_tag-styles;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: $text-color-basic;
+  text-transform: uppercase;
+}
+.gallery__author{
+  @include reset_tag-styles;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: $text-color-basic;
+}
+.gallery__number{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}

@@ -1,0 +1,11 @@
+
+
+@mixin reset_ul-styles{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+@mixin reset_tag-styles{
+	margin: 0;
+	padding: 0;
+}

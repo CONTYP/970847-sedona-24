@@ -1,0 +1,20 @@
+
+.button{
+  background: $basic-light-color;
+  border: 2px solid $basic-light-color;
+  box-sizing: border-box;
+}
+.button--fail{
+  width: 180px;
+  height: 58px;
+}
+.button--success{
+  width: 280px;
+  height: 58px;
+}
+.button--submit{
+  width: 280px;
+  height: 58px;
+}
+
+
