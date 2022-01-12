@@ -1,20 +1,31 @@
 
 .button{
-  background: $basic-light-color;
-  border: 2px solid $basic-light-color;
+  background-color: $basic-light-color;
+  border: none;
   box-sizing: border-box;
+  color: $text-color-menu-mob;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
-.button--fail{
+/*.button--fail{
   width: 180px;
   height: 58px;
 }
 .button--success{
   width: 280px;
   height: 58px;
+}*/
+.button:hover{
+  background-color: $basic-light-color-hover;
 }
-.button--submit{
-  width: 280px;
-  height: 58px;
+.button:focus{
+  outline: 2px solid $basic-light-color;
+  border-radius: 2px;
+  outline-offset: 2px;
 }
-
-
+.button:active{
+  background-color: $basic-light-color-active;
+  color: rgba($color: #ffffff, $alpha: 0.3)
+}

@@ -3,18 +3,3 @@
 	background-color: $bg-header;
   color: $text-color-basic;
 }
-.main-nav__list{
-  @include reset_ul-styles;
-}
-.main-nav__item{
-  background-color: $basic-light-color;
-  text-align: center;
-}
-.main-nav__link{
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 40px;
-  text-transform: uppercase;
-  color: $text-color-menu-mob;
-}
