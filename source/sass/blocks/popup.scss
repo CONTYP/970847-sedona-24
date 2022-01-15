@@ -2,15 +2,119 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: $bg-header;
+  position: absolute;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  left: -20px;
+  right: -20px;
 }
-.popup__popup-fail{
-  .text-box{
-    padding-bottom: 22px;
+.popup-fail{
+  display: none;
+  bottom: 445px;
+  padding: 40px 40px 35px;
+
+  .text-box--fail{
+    min-height: 135px;
+    margin-bottom: 20px;
+    .text-box__title{
+      font-size: 18px;
+    }
+  }
+  .button--fail{
+    width: 180px;
+    height: 58px;
   }
 }
-.popup__popup-success{
-  .text-box{
-    padding-bottom: 50px;
+.popup-success{
+ display: none;
+ bottom: 75px;
+ padding: 38px 38px 0;
+ background-color: $text-color-menu-mob;//cyan;
+ .text-box--success{
+    min-height: 160px;
+    margin-bottom: 29px;
+  .text-box__title{
+    font-size: 18px;
+  }
+ }
+ .popup-success__wrap-button{
+   width: calc(100vw - 40px);
+   height: 58px;
+   padding: 20px;
+   background-color: $bg-field;
+ }
+ .button--success{
+  width: 100%;
+  height: 100%;
+  }
+}
+
+/*************************************/
+@media (min-width:768px){
+  .popup-fail{
+    bottom: 110px;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%);
+    width: 400px;
+    height: 350px;
+    padding: 50px 45px;
+    .text-box--fail{
+      box-sizing: border-box;
+      height: 160px;
+      width: 315px;
+      margin-bottom: 25px;
+      .text-box__title{
+        font-size: 30px;
+        line-height: 40px;
+        padding: 0 40px;
+      }
+      .text-box__caption{
+        font-size: 16px;
+      }
+    }
+    .button--fail{
+      width: 180px;
+      height: 58px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  .popup-success{
+    bottom: 228px;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%);
+    width: 640px;
+    padding: 55px 98px 0;
+    background-color: $text-color-menu-mob;
+    .text-box--success{
+      width: 444px;
+      min-height: 115px;
+      margin-bottom: 32px;
+    .text-box__title{
+      font-size: 30px;
+    }
+    }
+    .popup-success__wrap-button{
+      width: 458px;
+      height: 58px;
+      padding: 44px 91px;
+      background-color: $bg-field;
+    }
+    .button--success{
+    width: 100%;
+    height: 100%;
+    }
+  }
+}
+/******************************************/
+@media (min-width: 1200px){
+  .popup-fail{
+    bottom: 45px;
+  }
+  .popup-success{
+    bottom: 228px;
   }
 }

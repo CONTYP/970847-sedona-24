@@ -1,10 +1,18 @@
 
 .page-footer{
   background-color: $bg-header;
-  padding: 29px 0 18px;
+  }
+.page-footer__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 29px 0 25px;
+  min-height: 180px;
 }
 .footer-social__list{
   @include reset_ul-styles;
+  display: flex;
 }
 .page-footer__title{
   @include reset_tag-styles;
@@ -14,4 +22,98 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+}
+.footer-social__item{
+  width: 48px;
+  height: 46px;
+  background-color: $basic-light-color;
+}
+.footer-social__item:hover{
+  background-color: $basic-light-color-hover;
+}
+.footer-social__item:not(:last-child){
+  margin-right: 6px;
+}
+.footer-social__link{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.footer-social__link:hover{
+  background-color: $basic-light-color-hover;
+}
+.footer-social__link:focus{
+  outline: 2px solid $basic-light-color;
+  border-radius: 2px;
+}
+.footer-social__link:active{
+  background-color: $basic-light-color-active;
+  opacity: 0.3;
+}
+.footer-social-icon{
+  margin: auto;
+}
+.page-footer__copyright{
+  display: flex;
+  justify-content: center;
+}
+.page-footer__copyright-link{
+  text-decoration: none;
+  display: flex;
+  padding: 15px;
+  .footer-logo-icon{
+    fill: #000;
+  }
+}
+.page-footer__copyright-link:hover{
+  .page-footer__copyright-title{
+  color: $color-active;
+  }
+  .footer-logo-icon{
+    fill: $basic-light-color;
+  }
+}
+.page-footer__copyright-link:focus{
+  outline: 2px solid $basic-light-color;
+  border-radius: 2px;
+}
+.page-footer__copyright-link:active{
+  .footer-logo-icon{
+    fill: rgba($color: #000000, $alpha: 0.3);
+  }
+}
+.page-footer__copyright-title{
+  display: inline;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+  padding-right: 10px;
+  color: $text-color-basic;
+  text-transform: uppercase;
+}
+
+/******************************************/
+@media (min-width: 768px) {
+  .page-footer__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 8% 25px 6%;
+    min-height: 65px;
+    position: relative;
+  }
+  .footer-social{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media (min-width: 1200px){
+  .page-footer__container{
+    padding: 29px 10% 25px 8%;
+  }
 }

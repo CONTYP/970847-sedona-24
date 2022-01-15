@@ -1,20 +1,67 @@
 .header-figure{
   @include reset_tag-styles;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-	background-color: #94dce2;
-  background-image: url(../img/photo/back-desktop.jpg);
-	background-position: center;
+	background-color: $bg-figure;
+  background-image:url(../img/photo/backg-mobile.jpg);
+	background-position: center 25%;
   background-size: cover;
   background-repeat: no-repeat;
 	min-height: 389px;
+}
+.header-figure::after{
+  content: "";
+  height: 57px;
+  width: 100%;
+  background-image: url(../img/icons/decor-divider-full.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header-figure-simple{
+  @include reset_tag-styles;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+	background-color: $bg-figure;
+  background-image:url(../img/photo/back-simple.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+	min-height: 160px;
+}
+.header-figure-simple::after{
+  content: "";
+  height: 57px;
+  width: 100%;
+  background-image: url(../img/icons/decor-divider-full.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .header-figure__wraper{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
 }
 .header-figure__image:not(:last-child){
   margin-bottom: 35px;
 }
+@media screen and (min-width:768px){
+  .header-figure{
+    background-image: url(../img/photo/back-desktop.jpg);
+  }
+  .header-figure-simple{
+    min-height: 290px;
+  }
+}
+@media screen and (min-width:1280px){
+
+  .header-figure-simple{
+    min-height: 301px;
+  }
+}
+
