@@ -1,6 +1,7 @@
 .main-nav{
   position: relative;
   min-height: 56px;
+  z-index: 1;
 }
 .main-nav__list {
   list-style-type: none;
@@ -79,9 +80,9 @@
 }
 /*****************************************/
 @media (min-width:768px){
-  .main-nav{
-    position: static;
-  }
+  //.main-nav{
+  //  position: static;
+  //}
   .main-nav__toggler, .toggler{
     display: none;
   }

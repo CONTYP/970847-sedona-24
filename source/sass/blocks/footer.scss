@@ -66,11 +66,9 @@
   }
 }
 .page-footer__copyright-link:hover{
+  color: $basic-light-color;
   .page-footer__copyright-title{
-  color: $color-active;
-  }
-  .footer-logo-icon{
-    fill: $basic-light-color;
+  color: $basic-light-color;
   }
 }
 .page-footer__copyright-link:focus{

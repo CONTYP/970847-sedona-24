@@ -86,7 +86,7 @@
   content: url(../img/icons/icon-house.svg);
 }
 .advantages__item:nth-child(5)::before{
-  content: url(../img/icons/menu-burger.svg);
+  content: url(../img/icons/icon-burger.svg);
 }
 .advantages__item:nth-child(6)::before{
   content: url(../img/icons/icon-gift.svg);
@@ -173,6 +173,15 @@
       text-align: center;
     }
   }
+  .advantages__item:nth-child(4)::before{
+    content: url(../img/icons/icon-house-big.svg);
+  }
+  .advantages__item:nth-child(5)::before{
+    content: url(../img/icons/icon-burger-big.svg);
+  }
+  .advantages__item:nth-child(6)::before{
+    content: url(../img/icons/icon-gift-big.svg);
+  }
   .advantages__item:nth-child(4)::before,
   .advantages__item:nth-child(5)::before,
   .advantages__item:nth-child(6)::before{
@@ -180,9 +189,9 @@
     left: 50%;
     transform: translate(-50%);
   }
-}
 .advantages__item:nth-child(n+9){
   .text-box__title{
     padding: 0 30px;
+  }
   }
 }

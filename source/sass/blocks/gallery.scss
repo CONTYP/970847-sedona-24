@@ -75,6 +75,10 @@
   font-size: 14px;
   line-height: 24px;
 }
+.gallery__like{
+  fill: #000;
+  opacity: .3;
+}
 /*************************************/
 @media (min-width: 768px) {
   .gallery{
@@ -153,9 +157,12 @@
     }
     .gallery__subtitle,
     .gallery__author,
-    .gallery__like,
     .gallery__number{
       color: #FFFFFF;
+    }
+    .gallery__like{
+      fill: #FFFFFF;
+      opacity: 1;
     }
   }
 }

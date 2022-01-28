@@ -10,7 +10,7 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__container">
+    <div class="page-header__conttainer">
       <nav class="main-nav">
 				<input class="visually-hidden toggler" id="toggler" type="checkbox">
 				<label class="main-nav__toggler" for="toggler">
@@ -48,12 +48,18 @@
     <figure class="header-figure">
       <h1 class="visually-hidden">Седона город в Аризоне</h1>
       <div class="header-figure__wraper">
-        <img class="header-figure__image" src="img/icons/welcome.svg"
-          width="181" height="49" alt="welcam" >
-        <img class="header-figure__image" src="img/icons/sedona-desk.svg"
-          width="282" height="49" alt="sedona">
-        <img class="header-figure__image" src="img/icons/title-lower.svg"
-          width="181" height="49" alt="slogan">
+        <picture class="header-figure__image">
+          <source media="(min-width: 768px)" srcset="img/icons/welcome-desktop.svg">
+          <img src="img/icons/welcome.svg" alt="welcam" ><!--width="181" height="49"-->
+        </picture>
+        <picture class="header-figure__image">
+          <source media="(min-width: 768px)" srcset="img/icons/sedona-desk.svg">
+          <img src="img/icons/sedona.svg"  alt="SEDONA"><!-- width="282" height="49"-->
+        </picture>
+        <picture class="header-figure__image">
+          <source media="(min-width: 768px)" srcset="img/icons/title-lower-desktop.svg">
+          <img src="img/icons/title-lower.svg"  alt="slogan"><!-- width="181" height="49"-->
+        </picture>
       </div>
     </figure>
   </header>
@@ -83,8 +89,15 @@
             </div>
           </li>
           <li class="advantages__item">
-            <img class="advantages__images" src="img/photo/photo-city1-mob.jpg"
-              width="320" height="260" alt="фасад здания">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/city1-desktop.jpg,
+                img/photo/city1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/city1-tablet.jpg,
+                img/photo/city2-tablet@2x.jpg 2x">
+                <img class="advantages__images" src="img/photo/city1-mob.jpg"
+                  srcset="img/photo/city1-mob@2x.jpg 2x"
+                  width="320" height="260"  alt="фасад здания">
+            </picture>
           </li>
           <li class="advantages__item">
             <div class="text-box">
@@ -106,7 +119,7 @@
             <div class="text-box">
               <h2 class="text-box__title">СУВЕНИРЫ</h2>
               <p class="text-box__caption">
-              Не только китайского, но и местного производства!
+              Не только китайского,<br> но и местного производства!
               </p>
             </div>
           </li>
@@ -119,8 +132,15 @@
             </div>
           </li>
           <li class="advantages__item">
-            <img class="advantages__images" src="img/photo/photo-2-mob.jpg"
-              width="320" height="260" alt="вид каньона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo/city2-desktop.jpg,
+                img/photo/city2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo/city2-tablet.jpg,
+                img/photo/city2-tablet@2x.jpg 2x">
+              <img class="advantages__images" src="img/photo/city2-mob.jpg"
+                srcset="img/photo/city2-mob@2x.jpg 2x"
+                width="320" height="260" alt="вид каньона">
+            </picture>
           </li>
           <li class="advantages__item">
             <div class="text-box">
@@ -165,8 +185,15 @@
       <!-- the end hotel-search-->
       <section class="arisona-map">
         <h2 class="visually-hidden">Карта Аризоны</h2>
-        <img class="arisona-map__map-image" src="img/photo/map-mobile.jpg"
-        width="320" height="350" alt="карта Аризоны">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo/map-desktop.jpg,
+            img/photo/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo/map-tablet.jpg,
+            img/photo/map-tablet@2x.jpg 2x">
+          <img class="arisona-map__map-image" src="img/photo/map-mobile.jpg"
+            srcset="img/photo/map-mobil@2x.jpg 2x"
+            width="320" height="350" alt="карта Аризоны">
+        </picture>
       </section>
       <!-- the end arisona-map-->
     </div>
@@ -181,12 +208,7 @@
               <span class="visually-hidden">Twitter</span>
               <svg class="footer-social-icon" aria-hidden="true" focusable="false"
                 width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2l2.1-.7c0 .9-.6 1.5-.9
-                  1.8.7.1 1.4-.6 1.4-.6a3 3 0 0 1-1.7 2C16.1 10.7 13 15.1 5.7
-                  15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4
-                  5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5
-                  5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9a11 11 0 0 0 7.6 3.8C8.7
-                  2.3 9.7.8 11.6.2z" fill="white"/>
+                <use href="img/sprite.svg#i-twitter"></use>
               </svg>
             </a>
           </li>
@@ -195,7 +217,7 @@
               <span class="visually-hidden">Facebook</span>
               <svg class="footer-social-icon" aria-hidden="true" focusable="false"
                 width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7z" fill="white"/>
+                <use href="img/sprite.svg#i-facebook"></use>
               </svg>
             </a>
           </li>
@@ -204,8 +226,7 @@
               <span class="visually-hidden">Youtube</span>
               <svg class="footer-social-icon" aria-hidden="true" focusable="false"
                 width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5
-                0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0zM7 11.8V4.2L13.7 8 7 11.8z" fill="white"/>
+                <use href="img/sprite.svg#i-youtube"></use>
               </svg>
             </a>
           </li>
@@ -213,15 +234,13 @@
       </div>
       <div class="page-footer__copyright">
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <h3 class="page-footer__copyright-title">Разработано:</h3>
-            <svg class="footer-logo-icon" aria-hidden="true" focusable="false"
-              width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 0h-1L1 1v25l14 8 13-8V1L14 0zm11 12L14 5h-1L2 12V3l11-1
-              12 1v9zM13 7l12 7-5 2-7-4v1l6 4h-1l-5-3v2l4 2-1 1-3-2v1l2 1-2 1-11-6 11-7zM2
-              15l11 7v1l-8-5v2l8 4v2l-8-5v1l8 5 9-5v-5l3-2v10l-12 7-11-7V15z"/>
-            </svg>
-          </a>
-        </div>
+          <h3 class="page-footer__copyright-title">Разработано:</h3>
+          <svg class="footer-logo-icon" aria-hidden="true" focusable="false"
+            width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#i-logo"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
