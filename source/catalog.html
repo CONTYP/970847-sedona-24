@@ -5,7 +5,7 @@
   <link rel="icon" href="favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>SEDONA CATALOG</title>
 </head>
 <body class="page__body page-catalog">
@@ -31,8 +31,12 @@
 			    <li class="main-nav__item">
 			      <div class="logo-box">
 				      <a class="logo-box__logo-link" href="index.html">
-				        <img class="logo-box__logo-image" src="img/icons/logotype-mobile.svg"
-					      width="102" height="84" alt="логотип SEDONA">
+				        <picture>
+                  <source media="(min-width: 1200px)" srcset="img/icons/logotype-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icons/logotype-tablet.svg">
+                  <img class="logo-box__logo-image" src="img/icons/logotype-mobile.svg"
+                  width="102" height="84" alt="логотип SEDONA">
+                </picture>
 				      </a>
 			      </div>
 		    	</li>
@@ -247,7 +251,7 @@
               <span class="visually-hidden">Twitter</span>
               <svg class="footer-social-icon" aria-hidden="true" focusable="false"
                 width="18" height="15">
-                <use href="img/sprite.svg#i-twitter"></use>
+                <use href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -256,7 +260,7 @@
               <span class="visually-hidden">Facebook</span>
               <svg class="footer-social-icon" aria-hidden="true" focusable="false"
                 width="10" height="18">
-                <use href="img/sprite.svg#i-facebook"></use>
+                <use href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -265,7 +269,7 @@
               <span class="visually-hidden">Youtube</span>
               <svg class="footer-social-icon" aria-hidden="true" focusable="false"
                 width="20" height="16">
-                <use href="img/sprite.svg#i-youtube"></use>
+                <use href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -276,7 +280,7 @@
           <h3 class="page-footer__copyright-title">Разработано:</h3>
           <svg class="footer-logo-icon" aria-hidden="true" focusable="false"
             width="27" height="35">
-            <use href="img/sprite.svg#i-logo"></use>
+            <use href="img/sprite.svg#htmlacademy-small"></use>
           </svg>
         </a>
       </div>
